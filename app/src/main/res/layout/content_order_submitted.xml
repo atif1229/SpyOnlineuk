@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.OrderSubmitted"
+    tools:showIn="@layout/activity_order_submitted"
+    android:background="@drawable/pymante">
+
+    <TextView
+        android:id="@+id/tvSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your order submitted successfully"
+        android:textColor="#D50000"
+        android:textSize="30sp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnGoTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go To Home"
+        android:layout_below="@id/tvSuccess"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        />
+</RelativeLayout>

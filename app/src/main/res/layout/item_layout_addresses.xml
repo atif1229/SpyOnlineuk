@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="4dp"
+    android:layout_margin="4dp"
+    app:contentPadding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rdoAddressSelection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            />
+        <TextView
+            android:id="@+id/tvShipping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shipping To"
+            android:layout_toRightOf="@id/rdoAddressSelection"
+            android:layout_toEndOf="@id/rdoAddressSelection"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginBottom="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="full address"
+            android:layout_below="@+id/tvShipping"
+            android:layout_toRightOf="@id/rdoAddressSelection"
+            android:layout_toEndOf="@id/rdoAddressSelection"
+            />
+
+        <TextView
+            android:id="@+id/tvNearByLandmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="near by"
+            android:layout_below="@id/tvAddress"
+            android:layout_toRightOf="@id/rdoAddressSelection"
+            android:layout_toEndOf="@id/rdoAddressSelection"/>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.CartActivity"
+    tools:showIn="@layout/activity_cart">
+
+<include layout="@layout/item_layout_cart_error"
+    android:layout_centerInParent="true"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:visibility="gone"
+    />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCartItem"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/item_layout_cart_items"
+        tools:itemCount="3"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/checkoutLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#F57C00"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proceed to checkOut"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/chevronTotalBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+           >
+
+
+            <TextView
+                android:id="@+id/tvTotalBill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:text="total price"
+                android:textColor="#FCFBFB"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_chevron_right_black_24dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
+
